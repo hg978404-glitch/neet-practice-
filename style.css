@@ -1,0 +1,47 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef3f8;
+  color: #172033;
+}
+.app { max-width: 760px; margin: auto; padding: 28px 16px; }
+header { text-align: center; margin-bottom: 24px; }
+header h1 { margin-bottom: 8px; }
+.controls, .card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.08);
+  margin-bottom: 18px;
+}
+.controls { display: flex; gap: 12px; align-items: end; flex-wrap: wrap; }
+label { flex: 1; font-weight: 600; }
+select, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 7px;
+  border-radius: 10px;
+  border: 1px solid #ccd4df;
+  font-size: 16px;
+}
+button { background: #2457d6; color: white; border: 0; cursor: pointer; font-weight: 700; }
+.controls button { flex: 0 0 180px; width: auto; }
+.option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: #f5f7fa;
+  color: #172033;
+  margin: 10px 0;
+  border: 1px solid #d8dee8;
+}
+.option:hover { background: #e9eef7; }
+.option.correct { background: #dff5e5; border-color: #51a765; }
+.option.wrong { background: #fde2e2; border-color: #d45b5b; }
+.topline { display: flex; justify-content: space-between; font-weight: 700; }
+.hidden { display: none; }
+.next { margin-top: 12px; }
+@media (max-width: 520px) {
+  .controls button { width: 100%; flex-basis: auto; }
+}

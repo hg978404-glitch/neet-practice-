@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEET Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>🧬 NEET Practice</h1>
+      <p>Practice MCQs • Track your score • Improve daily</p>
+    </header>
+
+    <section class="controls">
+      <label>Subject
+        <select id="subject">
+          <option value="all">All Subjects</option>
+          <option value="biology">Biology</option>
+          <option value="chemistry">Chemistry</option>
+          <option value="physics">Physics</option>
+        </select>
+      </label>
+      <button id="startBtn">Start Test</button>
+    </section>
+
+    <section id="quiz" class="card hidden">
+      <div class="topline">
+        <span id="progress">Question 1</span>
+        <span id="timer">⏱️ 60s</span>
+      </div>
+      <h2 id="question"></h2>
+      <div id="options"></div>
+      <button id="nextBtn" class="next hidden">Next Question →</button>
+    </section>
+
+    <section id="result" class="card hidden">
+      <h2>🎯 Test Complete!</h2>
+      <p id="score"></p>
+      <button id="restartBtn">Try Again</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
